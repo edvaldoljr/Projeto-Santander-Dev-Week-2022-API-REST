@@ -1,6 +1,6 @@
 package com.dio.santander.projetobanklineapi.controller;
 
-import com.dio.santander.projetobanklineapi.dto.CorrentistaDto;
+import com.dio.santander.projetobanklineapi.dto.NovoCorrentista;
 import com.dio.santander.projetobanklineapi.model.Correntista;
 import com.dio.santander.projetobanklineapi.repository.CorrentistaRepository;
 import com.dio.santander.projetobanklineapi.service.CorrentistaService;
@@ -28,7 +28,7 @@ public class CorrentistaController {
     }
 
     @PostMapping
-    public void save(@RequestBody CorrentistaDto correntista){
+    public void save(@RequestBody NovoCorrentista correntista){
         correntistaService.save(correntista);
     }
 }
